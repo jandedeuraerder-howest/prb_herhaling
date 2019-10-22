@@ -1,0 +1,50 @@
+﻿<Window x:Class="klassen_oef1.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:klassen_oef1.Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="671" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,0">
+        <GroupBox x:Name="grpStudenten" Header="De studenten" HorizontalAlignment="Left" Height="395" Margin="10,10,0,0" VerticalAlignment="Top" Width="316">
+            <Grid Margin="0,0,0,0">
+                <Label Content="ID" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="lblID" Content="" HorizontalAlignment="Left" Margin="96,10,0,0" VerticalAlignment="Top"/>
+                <Label Content="Naam" HorizontalAlignment="Left" Margin="7,34,0,0" VerticalAlignment="Top"/>
+                <Label Content="Voornaam" HorizontalAlignment="Left" Margin="7,60,0,0" VerticalAlignment="Top"/>
+                <Label Content="Geboortedat" HorizontalAlignment="Left" Margin="7,91,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtNaam" HorizontalAlignment="Left" Height="23" Margin="96,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                <TextBox x:Name="txtVoornaam" HorizontalAlignment="Left" Height="23" Margin="96,67,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+                <DatePicker x:Name="dtpGeboortedatum" HorizontalAlignment="Left" Margin="96,95,0,0" VerticalAlignment="Top" Width="198"/>
+                <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="12,127,0,0" VerticalAlignment="Top" Width="46" Click="btnAdd_Click"/>
+                <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Left" Margin="63,127,0,0" VerticalAlignment="Top" Width="46" Click="btnEdit_Click"/>
+                <Button x:Name="btnDelete" Content="Del" HorizontalAlignment="Left" Margin="114,127,0,0" VerticalAlignment="Top" Width="46" Click="btnDelete_Click"/>
+                <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="170,127,0,0" VerticalAlignment="Top" Width="42" Click="btnSave_Click"/>
+                <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="217,127,0,0" VerticalAlignment="Top" Width="42" Click="btnCancel_Click"/>
+                <ListBox x:Name="lstStudenten" HorizontalAlignment="Left" Height="176" Margin="10,186,0,0" 
+                         VerticalAlignment="Top" Width="284"
+                         DisplayMemberPath="Naam"
+                         SelectedValuePath="ID" SelectionChanged="lstStudenten_SelectionChanged"
+                         />
+                <Label x:Name="lblBewerking" Content="" Visibility="Collapsed" HorizontalAlignment="Left" Margin="49,152,0,0" VerticalAlignment="Top"/>
+                <Button x:Name="btnToevoegen" Content="Toevoegen --&gt;" HorizontalAlignment="Left" Margin="196,161,0,0" VerticalAlignment="Top" Width="96" Click="btnToevoegen_Click"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="grpKlassen" Header="De klassen" HorizontalAlignment="Left" Height="395" Margin="331,10,0,0" VerticalAlignment="Top" Width="316">
+            <Grid Margin="0,0,0,0">
+                <ListBox x:Name="lstDeKlassen" HorizontalAlignment="Left" Height="132" Margin="10,10,0,0" VerticalAlignment="Top" Width="284" 
+                         DisplayMemberPath="Klasnaam"
+                         SelectedValuePath="ID"
+                         SelectionChanged="lstDeKlassen_SelectionChanged"/>
+                <ListBox x:Name="lstLeden" HorizontalAlignment="Left" Height="176" Margin="10,186,0,0" 
+                    VerticalAlignment="Top" Width="284"
+                    DisplayMemberPath="Naam"
+                    SelectedValuePath="ID"
+                         />
+                <Button x:Name="btnVerwijderen" Content="&lt;-- Verwijderen" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top" Width="96" Click="btnVerwijderen_Click"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "klassen_oef1.Lib", "klassen_oef1.Lib\klassen_oef1.Lib.csproj", "{26D23AE1-3486-4A5A-87B9-5779FE53E9FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "klassen_oef1.Wpf", "klassen_oef1.Wpf\klassen_oef1.Wpf.csproj", "{2C373826-A926-42A5-88D6-83B1D572DEDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26D23AE1-3486-4A5A-87B9-5779FE53E9FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D23AE1-3486-4A5A-87B9-5779FE53E9FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D23AE1-3486-4A5A-87B9-5779FE53E9FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D23AE1-3486-4A5A-87B9-5779FE53E9FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C373826-A926-42A5-88D6-83B1D572DEDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C373826-A926-42A5-88D6-83B1D572DEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C373826-A926-42A5-88D6-83B1D572DEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C373826-A926-42A5-88D6-83B1D572DEDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA0842BA-0CE7-41B6-A489-A5DE51CCA571}
+	EndGlobalSection
+EndGlobal
